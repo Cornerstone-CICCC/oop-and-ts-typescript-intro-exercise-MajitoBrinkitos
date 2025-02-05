@@ -3,7 +3,13 @@
 //    Use TypeScript types to ensure the parameter and return type are properly typed.
 
 function countVowels(word: string) {
-
+    let count = 0;
+    for (let char of word) {
+        if ('aeiou'.includes(char.toLowerCase())) {
+            count++;
+        }
+    }
+    return count;
 }
 
 // Expected output:
